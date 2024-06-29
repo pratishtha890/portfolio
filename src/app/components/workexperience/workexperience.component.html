@@ -1,0 +1,21 @@
+<section id="work-experience" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 work-experience-heading">Work Experience</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4" *ngFor="let experience of experiences">
+          <div class="card work-experience-card">
+            <div class="row no-gutters">
+              <div class="col-4 text-center d-flex align-items-center justify-content-center p-3">
+                <img [src]="experience.logo" alt="{{ experience.company }}" class="company-logo">
+              </div>
+              <div class="col-8 p-3 d-flex flex-column justify-content-center">
+                <h5 class="card-title">{{ experience.position }}</h5>
+                <p class="card-text">{{ experience.company }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

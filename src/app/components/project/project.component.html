@@ -1,0 +1,19 @@
+<section id="projects" class="py-5">
+  <div class="container">
+    <h2 class="text-center project-heading">Recent Projects</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8 mb-4" *ngFor="let project of projects">
+        <div class="card project-card">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a class="card-title" [href]="project.domain" target="_blank">{{ project.title }}</a>
+            </h5>
+            <p class="card-text"><strong>Tech Stack:</strong> {{ project.techStack }}</p>
+            <p class="card-description">{{ project.description }}</p>
+            <a [href]="project.githubLink" target="_blank" class="btn btn-primary">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

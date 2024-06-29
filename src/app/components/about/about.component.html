@@ -1,0 +1,31 @@
+<section id="about" class="py-5">
+  <div class="container">
+    <div class="about-header">
+      <h2>{{ title }}</h2>
+      <p>{{ introduction }}</p>
+    </div>
+    <div class="about-me-container">
+      <div class="about-me-image">
+        <img [src]="profileImage" alt="Profile Picture">
+      </div>
+      <div class="about-me-content">
+        <p>{{ bio }}</p>
+        <div class="skills-section">
+          <button (click)="toggleSkills()">{{ skillsExpanded ? 'Hide Skills' : 'Show Skills' }}</button>
+          <div *ngIf="skillsExpanded" class="skills">
+            <div *ngFor="let category of skills">
+              <h3>{{ category.name }}</h3>
+              <div *ngFor="let skill of category.items">
+                <label>{{ skill.name }}</label>
+                <div class="progress-bar">
+                  <div class="progress" [style.width.%]="skill.level"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>

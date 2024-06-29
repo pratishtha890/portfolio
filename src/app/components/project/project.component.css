@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+#projects {
+  background-color: #080809;
+  color: #fff;
+  padding: 60px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.project-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ff7e5f;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.project-card {
+  background: #1a1a1a;
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 20px;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ff7e5f;
+}
+
+.card-text, .card-description {
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #ff7e5f;
+  border-color: #ff7e5f;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #feb47b;
+  border-color: #feb47b;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .project-heading {
+    font-size: 2rem;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+  }
+
+  .card-text, .card-description {
+    font-size: 0.875rem;
+  }
+}

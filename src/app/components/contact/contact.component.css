@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+#contact {
+  background-color: #080809;
+  color: #fff;
+  padding: 60px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ff7e5f;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.form-group label {
+  font-weight: 600;
+}
+
+.form-control {
+  background-color: #1a1a1a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.form-control:focus {
+  border-color: #ff7e5f;
+  box-shadow: 0 0 10px rgba(255, 126, 95, 0.5);
+}
+
+.btn-custom {
+  background-color: #ff7e5f;
+  border-color: #ff7e5f;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #feb47b;
+  border-color: #feb47b;
+}
+
+.btn-secondary {
+  background-color: #ff7e5f;
+  border-color: #ff7e5f;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #555;
+  border-color: #555;
+}
+
+@media (max-width: 576px) {
+  .contact-heading {
+    font-size: 2rem;
+  }
+
+  .form-control {
+    font-size: 0.875rem;
+  }
+
+  .btn-custom, .btn-secondary {
+    font-size: 0.875rem;
+  }
+}
