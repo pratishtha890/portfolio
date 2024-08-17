@@ -20,7 +20,8 @@ export class AboutComponent {
         { name: 'NodeJS', level: 75 },
         { name: 'HTML', level: 90 },
         { name: 'Java', level: 85 },
-        { name: 'C#', level: 75 }
+        { name: 'C#', level: 75 },
+        { name: 'Python', level: 60 },
 
       ] 
     },
@@ -28,7 +29,8 @@ export class AboutComponent {
       name: 'Frameworks', 
       items: [
         { name: 'Angular', level: 85 },
-        { name: '.NET', level: 70 }
+        { name: '.NET', level: 70 },
+        { name: 'Flask', level: 65 }
       ] 
     },
     { 
